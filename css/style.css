@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #111111;
+    }
+
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      background-color: #111111;
+      overflow: hidden;
+
+    }
+    .hero_heading{
+      position: absolute;
+      color: #F9F8FF;
+      bottom: 35px;
+      left: 50px;
+      font-size: 200px;
+      margin: 0px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .gradient{
+      background: linear-gradient( #04C5FF, #4F3EFF);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .moving-object {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #356EFF;
+      animation: moveRandom 10s linear infinite;
+      filter: blur(110px);
+    }
+    .sub_object{
+      width: 25%;
+      height: 25%;
+      background-color: #F9F8FF;
+    }
+
+    .object1 {
+      animation-duration: 25s;
+      animation-name: moveRandom2;
+    }
+    .object2 {
+      animation-duration: 15s;
+      animation-name: moveRandom3;
+    }
+    .object3 {
+      animation-duration: 30s;
+      animation-name: moveRandom4;
+    }
+    .object4 {
+      animation-duration: 20s;
+      animation-name: moveRandom5;
+    }
+    .object5 {
+      animation-duration: 10s;
+      animation-name: moveRandom6;
+    }
+
+    @keyframes moveRandom {
+      0% {
+        top: 10vh;
+        left: 10vw;
+      }
+      25% {
+        top: 10vh;
+        left: 90vw;
+      }
+      50% {
+        top: 90vh;
+        left: 90vw;
+      }
+      75% {
+        top: 90vh;
+        left: 10vw;
+      }
+      100% {
+        top: 10vh;
+        left: 10vw;
+      }
+    }
+
+    /* Add new keyframes animations */
+
+    @keyframes moveRandom2 {
+      0% {
+        top: 10vh;
+        left: 10vw;
+      }
+      25% {
+        top: 25vh;
+        left: 75vw;
+      }
+      50% {
+        top: 75vh;
+        left: 50vw;
+      }
+      75% {
+        top: 40vh;
+        left: 10vw;
+      }
+      100% {
+        top: 10vh;
+        left: 10vw;
+      }
+    }
+
+    @keyframes moveRandom3 {
+      0% {
+        top: 10vh;
+        left: 10vw;
+      }
+      25% {
+        top: 50vh;
+        left: 25vw;
+      }
+      50% {
+        top: 100vh;
+        left: 100vw;
+      }
+      75% {
+        top: 30vh;
+        left: 90vw;
+      }
+      100% {
+        top: 10vh;
+        left: 10vw;
+      }
+    }
+
+    @keyframes moveRandom4 {
+      0% {
+        top: 10vh;
+        left: 10vw;
+      }
+      25% {
+        top: 30vh;
+        left: 50vw;
+      }
+      50% {
+        top: 90vh;
+        left: 80vw;
+      }
+      75% {
+        top: 10vh;
+        left: 20vw;
+      }
+      100% {
+        top: 10vh;
+        left: 10vw;
+      }
+    }
+
+    @keyframes moveRandom5 {
+      0% {
+        top: 10vh;
+        left: 10vw;
+      }
+      25% {
+        top: 90vh;
+        left: 10vw;
+      }
+      50% {
+        top: 20vh;
+        left: 60vw;
+      }
+      75% {
+        top: 70vh;
+        left: 30vw;
+      }
+      100% {
+        top: 10vh;
+        left: 10vw;
+      }
+    }
+
+    @keyframes moveRandom6 {
+      0% {
+        top: 10vh;
+        left: 10vw;
+      }
+      25% {
+        top: 70vh;
+        left: 90vw;
+      }
+      50% {
+        top: 30vh;
+        left: 40vw;
+      }
+      75% {
+        top: 80vh;
+        left: 20vw;
+      }
+      100% {
+        top: 10vh;
+        left: 10vw;
+      }
+    }
